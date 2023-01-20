@@ -1,0 +1,21 @@
+{{ define "index" }}
+
+{{ template "header" }}
+
+<main class="px-3">
+    <h1>Заповніть анкету</h1>
+    <form action="/save_article/" method="post">
+
+        <input type="text" name="name" id="name" placeholder="Введіть своє імʼя" class="form-control"><br>
+        <input type="text" name="phone_number" id="phone_number" placeholder="Введіть свій номер телефону" class="form-control"><br>
+        <input type="text" name="date_of_birth" id="date_of_birth" placeholder="Введіть свою дату народження" class="form-control"><br>
+        <input type="text" name="nationality" id="nationality" placeholder="Введіть свою національність" class="form-control"><br>
+
+        <button class="btn btn-warning">Підтвердити заповнення</button>
+        
+    </form>
+  </main>
+
+  {{ template "footer" }}
+
+  {{ end }}

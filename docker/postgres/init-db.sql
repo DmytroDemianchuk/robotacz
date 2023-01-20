@@ -1,0 +1,2 @@
+CREATE DATABASE peoples;
+GRANT ALL PRIVILEGES ON DATABASE peoples TO postgres;
